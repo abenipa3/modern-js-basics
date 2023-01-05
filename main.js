@@ -11,12 +11,15 @@ username = {
     email: 'ashley.example.com'
 };
 
-function init () {
-    // if (true) {
-    //     // var email = "alyssa@example.com";
-    //     let email = "alyssa@example.com";
-    //     document.getElementById('output').innerHTML = email;
-    // }
+// Traditional JavaScript
+// function init (name, isTrue) {
+
+//     document.getElementById('output').innerHTML = `${username.name} ({$username.email})`;
+
+// }
+
+// Modern JavaScript: Arrow Functions (or Arrow Notation)
+const init = () => {
 
     document.getElementById('output').innerHTML = `${username.name} ({$username.email})`;
 
