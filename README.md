@@ -13,6 +13,6 @@ This repo will also include:
 ## How to Run
 Since I also have PHP installed locally, I run this command:
 ```
-run php -S 127.0.0.1:8000
+php -S 127.0.0.1:8000
 ```
 And then open `localhost:8000`.
