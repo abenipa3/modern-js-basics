@@ -16,7 +16,7 @@ function nameString() {
     return `${username.name} ({$username.email})`;
 }
 
-document.getElementById('output').innerHTML = nameString();
-
 // Modern JavaScript: Arrow Functions (or Arrow Notation)
 const nameString = () => `${username.name} ({$username.email})`;
+
+document.getElementById('output').innerHTML = nameString();
