@@ -12,11 +12,11 @@ username = {
 };
 
 // Traditional JavaScript
-function nameString() {
-    return `${username.name} ({$username.email})`;
-}
+// function nameString() {
+//     return `${username.name} ({$username.email})`;
+// }
 
 // Modern JavaScript: Arrow Functions (or Arrow Notation)
-const nameString = () => `${username.name} ({$username.email})`;
+const nameString = (name, isTrue) => `${name} ({$username.email})`;
 
-document.getElementById('output').innerHTML = nameString();
+document.getElementById('output').innerHTML = nameString('Alyssa', true);
