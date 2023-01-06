@@ -12,17 +12,11 @@ username = {
 };
 
 // Traditional JavaScript
-// function init (name, isTrue) {
-
-//     document.getElementById('output').innerHTML = `${username.name} ({$username.email})`;
-
-// }
-
-// Modern JavaScript: Arrow Functions (or Arrow Notation)
-const init = () => {
-
-    document.getElementById('output').innerHTML = `${username.name} ({$username.email})`;
-
+function nameString() {
+    return `${username.name} ({$username.email})`;
 }
 
-init();
+document.getElementById('output').innerHTML = nameString();
+
+// Modern JavaScript: Arrow Functions (or Arrow Notation)
+const nameString = () => `${username.name} ({$username.email})`;
