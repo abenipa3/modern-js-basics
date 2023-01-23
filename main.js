@@ -36,4 +36,4 @@ class PurchasedItem extends Item {
 
 // document.getElementById('output').innerHTML = item.getDetails();
 
-document.getElementById('output').innerHTML = Item.getHelperText();
+document.getElementById('output').innerHTML = Item.maxItems;
