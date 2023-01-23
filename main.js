@@ -36,6 +36,7 @@ document.getElementById('output').innerHTML = names.join(', ');
 document.getElementById('btn').addEventListener('click', (e) => {
 
     const getDetails = () => {
+        console.log(this);
         return `The button id is ${e.currentTarget.getAttribute('id')}`;
     }
 
