@@ -27,6 +27,11 @@ class PurchasedItem extends Item {
     getDetailsWithPrice() {
         return `${this.name} - ${this.category} - $${this.price}`;
     }
+
+    static getNumberOfItems() {
+        // Super will use the Item class and get the maxItem property from that.
+        return `3 / ${super.maxItems}`
+    }
 }
 
 // let item = new Item('Coffee', 'Food');
@@ -36,4 +41,4 @@ class PurchasedItem extends Item {
 
 // document.getElementById('output').innerHTML = item.getDetails();
 
-document.getElementById('output').innerHTML = Item.maxItems;
+document.getElementById('output').innerHTML = PurchasedItem.getNumberOfItems();
