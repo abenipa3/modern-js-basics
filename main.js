@@ -1,44 +1,38 @@
+// Promises are Made
+
 'use strict';
 
-// Traditional JavaScript
-// function nameString() {
-//     return `${username.name} ({$username.email})`;
-// }
-
-// Modern JavaScript: Arrow Functions (or Arrow Notation)
-// const nameString = (name, isTrue) => `${name} ({$username.email})`;
-
-// document.getElementById('output').innerHTML = nameString('Alyssa', true);
-
-let users = [
-    {
-        name: "Alyssa",
-        email: "alyssa@example.com"
-    },
-    {
-        name: "Ashley",
-        email: "ashley@example.com"
-    }
-];
-
-let names = [];
-
-// // Traditional JavaScript
-// users.forEach(function(user){
-//     //do something with that user object
-//     names.push(user.name)
-// });
-
-users.forEach(user => names.push(user.name));
-
-document.getElementById('output').innerHTML = names.join(', ');
-
-document.getElementById('btn').addEventListener('click', (e) => {
-
-    const getDetails = () => {
-        return `The button id is ${e.currentTarget.getAttribute('id')}`;
-    }
-
-    document.getElementById('output').innerHTML = getDetails();
-
+let myPromise = new Promise((resolve, reject) => {
+    // call an api
+    let user = {
+        name: 'Andrew',
+        email: 'andrew@example.com'
+    };
+    setTimeout(() => {
+        resolve(user);
+        // reject('Sorry, could not retrieve the user.');
+    }, 2000);
 });
+
+const getAdditionalUserData = user => {
+    return new Promise((resolve, reject) => {
+        // calling another api to get more user data
+        let additionalData = {
+            favoriteColor: 'Blue',
+            currentDrink: 'Water'
+        };
+
+        setTimeout(() => {
+            resolve(user);
+        }, 2000);
+    });
+}
+
+// method chaining
+myPromise.then((user) => {
+    document.getElementById('output').innerHTML = `${user.name} (${user.email})`;
+}).catch((error) => {
+    document.getElementById('output').innerHTML = error;
+})
+
+document.getElementById('output').innerHTML = "No blocking! :)";
