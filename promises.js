@@ -1,3 +1,5 @@
+// Promises are Made
+
 'use strict';
 
 let myPromise = new Promise((resolve, reject) => {
