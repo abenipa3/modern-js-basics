@@ -38,10 +38,23 @@ users.set({
     document.getElementById('output').innerHTML += `${user.name} (${user.email}) <br>`;
 });
 
-users.set({
+// Console log reveals false if we set like so because
+// although an item shows in the users map, it's
+// not the same object as if they are two different keys.
+// users.set({
+//     name: 'Ashley',
+//     email: 'ashley@example.com'
+// }, function(user){
+//     document.getElementById('output').innerHTML += `(${user.email}) ${user.name} <br>`;
+// });
+
+// So we create an object.
+const userAshley = {
     name: 'Ashley',
     email: 'ashley@example.com'
-}, function(user){
+};
+
+users.set(userAshley, function(user){
     document.getElementById('output').innerHTML += `(${user.email}) ${user.name} <br>`;
 });
 
@@ -53,15 +66,8 @@ users.forEach((value, key) => {
 // A has method where we pass in an idea and 
 // it will turn into a boolean (true or false)
 // if the item exists in the map.
-let userAshleyExists = users.has({
-    name: 'Ashley',
-    email: 'ashley@example.com'
-});
+let userAshleyExists = users.has(userAshley);
 
 // Should return true because the item DOES exist in
 // the map that has the following as the key:
 console.log('userAshleyExists: ', userAshleyExists);
-
-// Spoiler alert: console log reveals false because
-// although an item shows in the users map, it's
-//  not the same object as if they are two different keys.""
