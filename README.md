@@ -11,7 +11,10 @@ My goal is to get a refresher on modern JavaScript, kind of as a prerequisite fo
 This repo will also include:
 - ~~Assignments (if the course provides it)~~
 - JS files created for each lesson.
-- Wiki, which includes notes/reviews of what I've learned. (WIP)
+- Wiki, which includes notes/reviews of what I've learned, specifically for:
+  - Let and Const
+  - Maps and Sets
+  - Modules
 
 ## How to Run
 Since I also have PHP installed locally, I run this command:
