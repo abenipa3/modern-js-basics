@@ -1,5 +1,7 @@
 # Modern JavaScript Basics
 
+Update: Course Completed as of January 31, 2023
+
 Using this repository to follow the course provided by Laracasts:
 
 [Modern JavaScript Basics](https://laracasts.com/series/modern-javascript-basics)
@@ -7,8 +9,9 @@ Using this repository to follow the course provided by Laracasts:
 My goal is to get a refresher on modern JavaScript, kind of as a prerequisite for VueJS.
 
 This repo will also include:
-- Assignments (if the course provides it)
-- Wiki, which includes notes/reviews of what I've learned.
+- ~~Assignments (if the course provides it)~~
+- JS files created for each lesson.
+- Wiki, which includes notes/reviews of what I've learned. (WIP)
 
 ## How to Run
 Since I also have PHP installed locally, I run this command:
