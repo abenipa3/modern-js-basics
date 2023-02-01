@@ -2,7 +2,7 @@
 
 Update: Course Completed as of January 31, 2023
 
-Using this repository to follow the course provided by Laracasts:
+This repository was used to follow the course provided by Laracasts:
 
 [Modern JavaScript Basics](https://laracasts.com/series/modern-javascript-basics)
 
