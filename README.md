@@ -1,6 +1,6 @@
 # Modern JavaScript Basics
 
-Update: Course Completed as of January 31, 2023
+Update: Course completed on January 31, 2023
 
 This repository was used to follow the course provided by Laracasts:
 
