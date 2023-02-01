@@ -34,7 +34,7 @@ document.getElementById('output').innerHTML = fruitsThatContainE.join(', ');
 let users = [
     {
         name: 'Aragorn',
-        email: 'andrew@example.com',
+        email: 'aragorn@example.com',
         stars: 5
     },
     {
